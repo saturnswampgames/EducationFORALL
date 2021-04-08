@@ -87,7 +87,7 @@ function openTeach() {
 
 // donateModal
 var donateModal = document.getElementById("donateModal");
-var closeClick2 = document.getElementById("closeClick2");
+var closeClick = document.getElementById("closeClick");
 var submit = document.getElementById("donateUs");
 var donateBtn = document.getElementById("donate");
 var closeBtn2 = document.getElementById("closeBtn2");
@@ -105,4 +105,13 @@ donateBtn.addEventListener("click", openDonate);
 
 function openDonate() {
   donateModal.style.display = "block";
+}
+
+
+var animImg = document.getElementsByClassName("animImg");
+
+animImg.addEventListener("click", animateFunction);
+
+function animateFunction(){
+  animImg.style.borderRadius = "45%";
 }
