@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Education For All</title>
+</head>
+
+<body>
+  <div class="header-section">
+    <header>
+      <h2>EDUCATION FOR ALL</h2>
+      <h5>A non profit organisation</h5>
+    </header>
+  </div>
+  <div>
+    <nav id="myNavbar" class="navbar">
+      <a href="index.html">Home</a>
+      <a href="teach.html">Teach</a>
+      <a href="#donate-section">Donate</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </div>
+
+  <!-- Pop-up Modal -->
+  <div class="modal" id="popupModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Register For Future Updates</h2>
+      </div>
+      <div class="modal-body">
+        <form class="register" id="regForm">
+          <label class="name" for="name">Name</label>
+          <input id="nameBlock" type="text" placeholder="Enter Your Name" required><br><br>
+          <label class="email" for="email">Email</label>
+          <input id="emailBlock" type="email" placeholder="Enter Your Email" required><br><br>
+          <input id="submitBtn" type="submit" placeholder="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Main Content -->
+
+  <div class="row">
+    <div class="sideMenu">
+      <h2>Our Founder</h2>
+      <div class="founderImg">
+        <img class="founder-image" src="https://i.ibb.co/cvnWkzc/solo.png" alt="solo" border="0">
+        <h3>Mr. Sarat Sha</h3>
+        <div class="overlay">
+          <div class="text">
+            I am Sharat Sha, Founder and current Managing Adminstrater of the EDUCATION FOR ALL Foundation.
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <h3>The EDUCATION FOR ALL Foundation was established in 2018. <br>
+          With the help of few strong and assertive people looking to improve life of slum children.</h3><br>
+        <a href="about.html">Know More About Foundation</a>
+      </div>
+      <div class="studentInfo">
+        <h2>Here are some of the students that are helping us in this journey.</h2>
+        <img class="studentImg" src="https://i.ibb.co/kxJ4tFC/can-i-help-you.png" alt="can-i-help-you" border="0">
+        <h3>Mr. Short Temper</h3>
+        <p>He joined us in 2019 and has been a supporting pillar since then.<br>
+          He teaches them History and Economics.<br>
+          He is currently studying Economics in Delhi University.</p>
+      </div>
+      <div class="studentInfo">
+        <img class="studentImg" src="https://i.ibb.co/cg83cft/music.jpg" alt="music" border="0">
+        <h3>Ms. Sing Lover</h3>
+        <p>She joined us on 22nd April in 2019 and has been a supporting pillar since then.<br>
+          She teaches them English and Drawing.<br>
+          She is currently studying Fashion Design in Asian Institue of Art.</p>
+      </div>
+      <a href="about.html" class="staffLink">See More of our Student Member here...</a>
+    </div>
+    <div class="mainMenu">
+      <div class="image-slides">
+        <div>
+          <div class="slides fade">
+            <video class="videoslide fade" autoplay muted loop>
+              <source src="videos/slumSlide1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="slides fade">
+            <video class="videoslide fade" autoplay muted loop>
+              <source src="videos/slumSlide2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="slides fade">
+            <video class="videoslide fade" autoplay muted loop>
+              <source src="videos/slumSlide3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="slides fade">
+            <video class="videoslide fade" autoplay muted loop>
+              <source src="videos/slumSlide4.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div class="main-description">
+        <h2>OUR MOTTO<br>
+          Helping Others Is How We Thrive.</h2>
+      </div>
+      <div id="teach-section" class="video">
+        <video class="slumVideo" autoplay muted loop>
+          <source src="videos/slum.mp4" type="video/mp4">
+        </video>
+        <h2 class="vidDesc">Slum Kids are not able to study by themselves even if they have books, because mostly there books are too old or they can't understabd what's written in it.
+          With your help and some valuable time they can learn to read and write by themselves, giving them an endless possiblity for their future.
+          Helping them will nourish their wings which will then help them to fly harder and stronger.</h2>
+        <button id="teach" class="teachBtn">Help Us To Give Them Wings <i class="fa fa-handshake-o icon1"></i>
+          <!-- modal for teach -->
+          <div class="modal teach-modal" id="teachModal">
+            <div class="modal-content teachModal-content">
+              <div class="modal-header teachModal-header">
+                <span id="closeClick" class="close">&times;</span>
+                <h2>Help To Teach The Kids</h2>
+              </div>
+              <div class="modal-body teachModal-body">
+                <form class="teach-form">
+                  <label class="name" for="name">Name</label>
+                  <input id="teachName" type="text" placeholder="Enter Your Name" required><br><br>
+                  <label class="email" for="age">Email</label>
+                  <input id="teachEmail" type="email" placeholder="Enter Your Email" required><br><br>
+                  <label class="age" for="age">Date of Birth</label>
+                  <input id="teachAge" type="date" placeholder="Enter Your DOB" required><br><br>
+                  <label class="college" for="college">College</label>
+                  <input id="teachCollege" type="text" placeholder="Enter Your College Name" required><br><br>
+                  <label class="subject" for="subject">Subject</label>
+                  <input id="teachSubject" type="text" placeholder="Enter The Subjects You Would Like to Teach" required><br><br>
+                  <input  id="teachJoin" type="submit" placeholder="Join Us" required>
+                </form>
+              </div>
+              <div class="modal-footer teachModal-footer">
+                <h2 id="closeBtn" class="closeBtn">Close</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="donate-section" class="video">
+        <video class="slumVideo2" autoplay muted loop>
+          <source src="videos/slum2.mp4" type="video/mp4">
+        </video>
+        <h2 class="vidDesc">Our small efforts and step can make a whole lot of different for them. We will be able to help them to go to school someday and then college. The feeling of someone
+          achieving something great because of you is a feeling that cannot be measured. The joy the pride that our hearts have felt helping these kids is immeasurable till date.
+          Now i ask you to help them and savour that felling for youself.</h2>
+      </div><br><br><br>
+      <div id="donate" class="donate-group">
+        <div class="donate-text">
+          <img class="slumImg" src="https://i.ibb.co/0hjcRZ9/slum1.png" alt="slum1" border="0">
+          <h2>It is alright if you can't teach them, there are many other ways with which you can help them.
+            One of those ways being donating your old books to our foundation, so that we can distribute it further ahead.
+            It doesn't matter to what classes these books belong to. here we have never enough </h2>
+        </div><br><br>
+        <div class="donate-text">
+          <img class="slumImg2" src="https://i.ibb.co/nQR5Kvv/slum2.png" alt="slum2" border="0">
+          <h2>It is alright if you can't teach them, there are many other ways with which you can help them.
+            One of those ways being donating your old books to our foundation, so that we can distribute it further ahead.
+            It doesn't matter to what classes these books belong to. here we have never enough </h2>
+        </div>
+        <button id="donate" class="donateBtn">Donate Your Books</button>
+        <div class="modal donate-modal" id="donateModal">
+          <div class="modal-content donateModal-content">
+            <div class="modal-header donateModal-header">
+              <span id="closeClick" class="close">&times;</span>
+              <h2>Please provide us with your info</h2>
+            </div>
+            <div class="modal-body donateModal-body">
+              <form class="donate-form">
+                <label class="name" for="name">Name</label>
+                <input id="donateName"  type="text" placeholder="Enter Your Name" required><br><br>
+                <label class="email" for="email">Email</label>
+                <input id="donateEmail" type="email" placeholder="Enter Your Email" required><br><br>
+                <label class="age" for="age">Date of Birth</label>
+                <input  type="date" placeholder="Enter Your DOB" required><br><br>
+                <label class="number" for="number">Phone No.</label>
+                <input id="donateNumber" type="text" placeholder="Enter Your Phone No. Preferably Whatsapp" required><br><br>
+                <label class="subject" for="subject">Subject</label>
+                <input id="donateSub"  type="text" placeholder="Enter The Name of The Books" required><br><br>
+                <input id="donateUs" type="submit" placeholder="Donate" required>
+              </form>
+            </div>
+            <div class="modal-footer donateModal-footer">
+              <h2 id="closeBtn2" class="closeBtn">Close</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer-section">
+    <div class="row">
+      <div class="left-section">
+        <h3><a href="DonationLink">Support</a></h3>
+        <h3><a href="about.html">Contact Us</a></h3>
+      </div>
+      <div class="right-section">
+        <h3>Follow Us:-</h3>
+        <div class="follow">
+          <a href="#facebook"><img class="icon-img" src="https://img.icons8.com/color/48/000000/facebook-circled--v5.png" /></a>
+          <a href="#instagram"><img class="icon-img" src="https://img.icons8.com/color/48/000000/instagram-new.png" /></a>
+          <a href="#twitter"><img class="icon-img" src="https://img.icons8.com/color/48/000000/twitter.png" /></a>
+          <a href="#youtube"><img class="icon-img" src="https://img.icons8.com/color/48/000000/youtube--v1.png" /></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
